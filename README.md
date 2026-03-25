@@ -1,15 +1,22 @@
-Projeto: Extração e Análise de Dados do Lattes com Apache Hop
+# Projeto: Extração e Análise de Dados do Lattes com Apache Hop
+
+## 📌 Sobre o Projeto
 
 Este projeto tem como objetivo extrair, transformar e analisar dados de currículos da Plataforma Lattes, utilizando ferramentas de ETL e visualização de dados.
 
 A solução foi desenvolvida com foco em automatizar a leitura de arquivos XML do Lattes, estruturar os dados e gerar insights a partir deles.
 
-Tecnologias utilizadas
+---
+
+## Tecnologias utilizadas
 Apache Hop (ETL)
 XML (dados do Lattes)
 Banco de dados relacional
 Power BI (visualização de dados)
-Etapas do projeto
+
+---
+
+## Etapas do projeto
 1.  Extração de dados
 Leitura de múltiplos arquivos XML do Lattes
 Uso do transform Get file names para percorrer diretórios
@@ -28,7 +35,10 @@ Estruturação das tabelas para permitir análise posterior
 4. Visualização
 Conexão do banco de dados ao Power BI
 Criação de gráficos e dashboards para análise das produções acadêmicas
-Resultados
+
+---
+
+## Resultados
 
 O projeto permite:
 
