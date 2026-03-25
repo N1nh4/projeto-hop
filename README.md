@@ -9,10 +9,31 @@ A solução foi desenvolvida com foco em automatizar a leitura de arquivos XML d
 ---
 
 ## Tecnologias utilizadas
-Apache Hop (ETL)
-XML (dados do Lattes)
-Banco de dados relacional
-Power BI (visualização de dados)
+- Apache Hop (ETL)
+- XML (dados do Lattes)
+- Banco de dados relacional
+- Power BI (visualização de dados)
+
+---
+## Como executar o projeto
+1. Subir o banco de dados com Docker
+   ```
+   docker build -t lattes-db .
+   docker run -d --name lattes-db -p 5437:5432 lattes-db
+   ```
+2. Configurar o banco
+   - Acesse o banco pelo DBeaver (ou outro)
+   - Crie as tabelas de pesquisadores e producoes
+     
+3. executar os pipelines no Apache Hop
+   - dados_pesquisador → leitura de um único XML
+   - dados_pesquisadores_varios → leitura de múltiplos pesquisadores
+   - dados_producoes_pesquisadores_varios → extração das produções acadêmicas
+
+   Esses pipelines realizam:
+  - Leitura dos arquivos XML
+  - Tratamento dos dados
+  - Inserção no banco de dados
 
 ---
 
